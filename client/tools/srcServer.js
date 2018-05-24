@@ -8,7 +8,7 @@ import proxy from 'http-proxy-middleware';
 
 const apiProxy = proxy('/api', {
     target: 'http://127.0.0.1:9999',
-    changeOrigin: false   // for vhosted sites
+    changeOrigin: false 
 });
 
 const bundler = webpack(config);
