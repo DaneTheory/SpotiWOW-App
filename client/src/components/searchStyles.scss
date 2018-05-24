@@ -1,0 +1,25 @@
+.search__form__wrapper {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin: auto auto;
+    top: 3.5em;
+}
+
+#search__bar {
+    border: none;
+    outline: none;
+    display: inline-block;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 2em;
+    min-width: 75%;
+}
+
+.search__bttn {
+    border: none;
+    background: none;
+    padding: 0;
+    vertical-align: sub;
+    cursor: pointer;
+}

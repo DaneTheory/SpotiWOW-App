@@ -1,0 +1,30 @@
+{
+  "name": "spotiwow-app-api",
+  "version": "1.0.0",
+  "description": "An Express API server that handles auth for Spotify's Web API for use in a client side application",
+  "scripts": {
+    "client-install": "cd ./client && npm install",
+    "install-all": "concurrently \"npm install\" \"npm run client-install\"",
+    "api": "nodemon ./server/server.js --config ./nodemon.json --exec babel-node",
+    "client": "cd ./client && npm start",
+    "start": "concurrently --kill-others \"npm run api\" \"npm run client\"",
+    "prod:run": "pm2 start --interpreter babel-node ./server/server.js --name spotiwow-app-api",
+    "prod": "concurrently --kill-others \"yarn prod:run\""
+  },
+  "author": "Branden Dane",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "morgan": "^1.8.2",
+    "nodemon": "^1.11.0",
+    "spotify-web-api-node": "^2.4.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "concurrently": "^3.4.0",
+    "cors": "^2.8.3"
+  }
+}

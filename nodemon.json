@@ -1,0 +1,7 @@
+{
+  "verbose": true,
+  "ignore": ["client/*"],
+  "events": {
+    "restart": "osascript -e 'display notification \"app restarted\" with title \"nodemon\"'"
+  }
+}
