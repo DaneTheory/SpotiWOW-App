@@ -17,7 +17,7 @@
     "prebuild": "npm run clean-dist",
     "build": "babel-node tools/build.js && npm run open:dist",
     "analyze-bundle": "babel-node ./tools/analyzeBundle.js",
-    "prod": "babel-node tools/build.js && pm2 start --interpreter babel-node tools/distServer.js --name spotiwow-app-ui"
+    "prod": "babel-node tools/build.js && pm2 start --interpreter babel-node tools/srcServer.js --name spotiwow-app-ui"
   },
   "author": "Branden Dane",
   "license": "MIT",
