@@ -7,7 +7,7 @@ import config from '../webpack.config.dev';
 import proxy from 'http-proxy-middleware';
 
 const apiProxy = proxy('/api', {
-    target: 'http://localhost:9999',
+    target: 'http://127.0.0.1:9999',
     changeOrigin: false   // for vhosted sites
 });
 
