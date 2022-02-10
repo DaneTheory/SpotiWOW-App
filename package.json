@@ -26,6 +26,6 @@
     "babel-preset-stage-2": "^6.24.1",
     "concurrently": "^3.4.0",
     "cors": "^2.8.3",
-    "node-sass": "^4.9.0"
+    "node-sass": "^7.0.0"
   }
 }
